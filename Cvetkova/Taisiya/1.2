@@ -1,0 +1,22 @@
+#include <iostream>
+
+int main ()
+{
+    int n; std::cin >> n;
+
+    for(int k= 2; k*k <= n; ++k)
+    {
+        while( n % k == 0 )
+        {
+            std::cout << k << " ";
+            n /= k;
+        }
+    }
+
+    if( n != 1)
+    {
+        std::cout << n;
+    }
+
+    return 0;
+}
