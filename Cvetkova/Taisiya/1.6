@@ -1,0 +1,15 @@
+#include <iostream>
+
+int main ()
+{
+    int n, k;
+    std::cin >> n;
+    k = n/2;
+   while((n-k)%k!=0)
+   {
+       k=k-1;
+   }
+   std::cout << k << "  " << n-k;
+
+    return 0;
+}
